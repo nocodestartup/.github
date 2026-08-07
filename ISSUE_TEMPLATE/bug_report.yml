@@ -1,0 +1,40 @@
+name: Reportar um problema
+description: Algo não está funcionando em um template, fluxo ou projeto de exemplo
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: projeto
+    attributes:
+      label: Qual template, fluxo ou projeto?
+      description: Nome do repositório ou do material com problema.
+    validations:
+      required: true
+  - type: textarea
+    id: oque
+    attributes:
+      label: O que aconteceu?
+      description: Conte o que você tentou fazer e o que deu errado.
+    validations:
+      required: true
+  - type: textarea
+    id: passos
+    attributes:
+      label: Como reproduzir
+      description: Passo a passo para a gente chegar no mesmo erro.
+      placeholder: "1. Clonei o repositório..."
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que deveria acontecer?
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Prints e mensagens de erro
+      description: Cole aqui as mensagens de erro ou descreva o que apareceu na tela. Não cole chaves de API nem dados pessoais.
+    validations:
+      required: false
