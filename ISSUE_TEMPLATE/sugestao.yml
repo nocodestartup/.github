@@ -1,0 +1,19 @@
+name: Sugerir melhoria
+description: Ideia para melhorar um template, fluxo ou material publicado
+title: "[Sugestão] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: sugestao
+    attributes:
+      label: Sua sugestão
+      description: O que você melhoraria ou adicionaria?
+    validations:
+      required: true
+  - type: textarea
+    id: motivo
+    attributes:
+      label: Por que isso ajudaria?
+      description: Conte como isso facilitaria o uso do material por outros alunos.
+    validations:
+      required: false
